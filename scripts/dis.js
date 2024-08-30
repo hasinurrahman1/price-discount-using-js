@@ -1,7 +1,7 @@
 document.getElementById('disc-btn').addEventListener('click', function () {
-    const element = document.getElementById('input-field');
-    const fieldValue = element.value;
-    if (fieldValue === 'DISC30') {
+    const inputField = document.getElementById('input-field');
+    const inputFieldValue = inputField.value;
+    if (inputFieldValue === 'DISC30') {
         const mainPrice = document.getElementById('main-price');
         const mainPriceValueString = mainPrice.innerText;
         const mainPriceValue = parseFloat(mainPriceValueString);
@@ -14,5 +14,5 @@ document.getElementById('disc-btn').addEventListener('click', function () {
         
         alert('Please type DISC30')
     }
-    element.value = '';
+    inputField.value = '';
 })
